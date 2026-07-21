@@ -1,5 +1,6 @@
 {
-  "minecraftVersion": "1.20.1",
+  "_comment": "개발자 전용 매니페스트. 여기만 수정하고 다시 패키징하면 플레이어는 새 exe로 자동으로 새 모드/버전 실행.",
+  "minecraftVersion": "1.21.1",
   "loader": "fabric",
   "fabricLoaderVersion": "0.16.9",
   "server": {
@@ -9,15 +10,16 @@
   },
   "mods": [
     {
+      "_note": "Modrinth에서 Cobblemon 1.21.1 Fabric 최신 파일 페이지 → 우클릭 '링크 복사'로 실제 URL 교체",
       "name": "Cobblemon",
-      "url": "https://mediafiles.forgecdn.net/files/PLACEHOLDER/Cobblemon-fabric-1.5.2+1.20.1.jar",
-      "filename": "cobblemon-fabric-1.5.2+1.20.1.jar",
+      "url": "https://cdn.modrinth.com/data/MdwFAVRL/versions/REPLACE_ME/Cobblemon-fabric-1.6.1+1.21.1.jar",
+      "filename": "cobblemon-fabric-1.6.1+1.21.1.jar",
       "sha1": ""
     },
     {
       "name": "Fabric API",
-      "url": "https://cdn.modrinth.com/data/P7dR8mSH/versions/PLACEHOLDER/fabric-api-0.92.2+1.20.1.jar",
-      "filename": "fabric-api-0.92.2+1.20.1.jar",
+      "url": "https://cdn.modrinth.com/data/P7dR8mSH/versions/REPLACE_ME/fabric-api-0.115.1+1.21.1.jar",
+      "filename": "fabric-api-0.115.1+1.21.1.jar",
       "sha1": ""
     }
   ],

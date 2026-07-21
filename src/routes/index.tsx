@@ -172,7 +172,7 @@ function Launcher() {
         </main>
 
         <footer className="px-8 py-4 text-center text-xs text-white/40">
-          Minecraft 1.20.1 · Fabric · Cobblemon
+          Minecraft 1.21.1 · Fabric · Cobblemon
         </footer>
       </div>
 
