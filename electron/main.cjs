@@ -64,7 +64,8 @@ function createWindow() {
     },
   });
 
-  const indexHtml = path.join(__dirname, "..", "dist", "index.html");
+  // Built by: npm run build:electron  →  dist-electron/index.html
+  const indexHtml = path.join(__dirname, "..", "dist-electron", "index.html");
   mainWindow.loadFile(indexHtml);
 }
 
