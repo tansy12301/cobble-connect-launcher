@@ -1,43 +1,40 @@
 # Cobblemon Launcher — 로컬 빌드 & 패키징 가이드
 
-Lovable 미리보기는 웹 UI만 보여줍니다. 실제 로그인 / 모드 다운로드 / 게임 실행은 아래 절차로 로컬에서 확인하세요.
+Lovable 미리보기는 웹 UI만 보여줍니다. 실제 로그인 / 모드 다운로드 / 게임 실행은 아래 절차로 로컬 PC(Windows 권장)에서 확인하세요.
 
-## 1. Electron 셋업 (최초 1회)
+## 1. 사전 준비
 
-로컬 PC에서 저장소를 클론한 뒤:
+- Node.js LTS: https://nodejs.org
+- Git: https://git-scm.com
+- Java 17+: https://adoptium.net
+
+## 2. 코드 받아서 VS Code 열기
+
+```bash
+git clone https://github.com/<내계정>/<저장소이름>.git
+cd <저장소이름>
+code .
+```
+
+## 3. 패키지 설치 (VS Code 터미널: Ctrl + `)
 
 ```bash
 npm install
-npm install --save-dev electron @electron/packager
+npm install --save-dev electron electron-packager
 ```
 
-`vite.config.ts`에 다음을 추가해 Electron이 `file://`로 로드할 때 자산이 깨지지 않게 하세요:
+> `vite.config.ts` / `package.json` 수정은 이미 적용되어 있습니다. 따로 손댈 필요 없습니다.
 
-```ts
-export default defineConfig({
-  tanstackStart: { server: { entry: "server" } },
-  vite: { base: "./" },   // ← 추가
-});
-```
-
-`package.json`에 아래 두 줄 추가:
-
-```json
-"main": "electron/main.cjs",
-"scripts": {
-  "electron": "electron .",
-  "package:win": "electron-packager . CobblemonLauncher --platform=win32 --arch=x64 --out=release --overwrite --ignore='^/src' --ignore='^/public' --ignore='^/release'"
-}
-```
-
-## 2. 개발 실행
+## 4. 개발 실행 (창 띄워서 테스트)
 
 ```bash
-npm run build           # dist/ 생성
-npm run electron        # Electron 창이 뜨고 로그인 → 플레이 테스트 가능
+npm run electron
 ```
 
-## 3. `electron/modpack.json` 채우기
+`npm run build:electron`(Electron 전용 정적 화면 빌드)이 자동 실행된 뒤 Electron 창이 뜹니다.
+여기서 Microsoft 로그인 → 플레이까지 실제로 동작합니다.
+
+## 5. `electron/modpack.json` 채우기
 
 - `minecraftVersion`, `fabricLoaderVersion` 확인
 - `server.ip` / `server.port`에 실제 서버 주소 입력
@@ -45,20 +42,29 @@ npm run electron        # Electron 창이 뜨고 로그인 → 플레이 테스�
   - Modrinth: 모드 페이지 → Files → 우클릭 "링크 복사"
   - Fabric API 는 코블몬 필수 의존
 
-## 4. Windows 배포 파일 만들기
+수정 후 다시 `npm run package:win` 하면 플레이어는 새 exe로 새 모드/버전을 자동 사용합니다.
+
+## 6. Windows 배포 파일(exe) 만들기
 
 ```bash
 npm run package:win
 ```
 
-`release/CobblemonLauncher-win32-x64/CobblemonLauncher.exe` 를 zip으로 압축해 플레이어들에게 배포하면 됩니다.
+만들어지는 위치:
 
-## 5. 플레이어가 준비할 것
+```
+<저장소폴더>/release/CobblemonLauncher-win32-x64/CobblemonLauncher.exe
+```
+
+`CobblemonLauncher-win32-x64` **폴더 전체**를 zip으로 압축해 배포하세요.
+(exe 하나만 보내면 실행되지 않습니다. 같은 폴더의 dll/resources가 필요합니다.)
+
+## 7. 플레이어가 준비할 것
 
 - Java 17+ 설치 (Adoptium 권장: https://adoptium.net/)
 - 정품 마인크래프트 계정 (Microsoft)
 
-## 6. 프로덕션용 Azure AD 앱 (선택)
+## 8. 프로덕션용 Azure AD 앱 (선택)
 
 `electron/auth.cjs`의 `CLIENT_ID`는 마인크래프트 공식 런처 값입니다. 자체 앱을 원하면:
 
