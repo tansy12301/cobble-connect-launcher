@@ -9,8 +9,8 @@ import { Play, Settings, LogOut, Loader2, Gamepad2 } from "lucide-react";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Cobblemon Launcher" },
-      { name: "description", content: "코블몬 서버 전용 마인크래프트 런처" },
+      { title: "경준의 놀이동산" },
+      { name: "description", content: "코블몬 서버\u00a0" },
     ],
   }),
   component: Launcher,
@@ -130,8 +130,8 @@ function Launcher() {
               <Gamepad2 className="size-5" />
             </div>
             <div>
-              <h1 className="text-lg font-bold leading-none">Cobblemon Launcher</h1>
-              <p className="text-xs text-white/60">코블몬 서버 전용</p>
+              <h1 className="text-lg font-bold leading-none">경준의 놀이동산</h1>
+              <p className="text-xs text-white/60">코블몬 서버&nbsp;</p>
             </div>
           </div>
           {profile && (
@@ -202,9 +202,9 @@ function LoginCard({
   return (
     <Card className="w-full max-w-md border-white/10 bg-white/5 p-8 backdrop-blur-xl">
       <div className="text-center">
-        <h2 className="text-2xl font-bold text-white">환영합니다</h2>
+        <h2 className="text-2xl font-bold text-white">하이룽</h2>
         <p className="mt-2 text-sm text-white/70">
-          Microsoft 계정으로 로그인하면 모든 준비가 자동으로 진행됩니다.
+          Microsoft 계정으로 로그인하세요.{"\n"}알긋죠?
         </p>
       </div>
       <Button
