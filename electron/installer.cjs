@@ -120,6 +120,18 @@ function mavenPath(name) {
 async function ensureMods({ mods, gameDir, onProgress }) {
   const modsDir = path.join(gameDir, "mods");
   fs.mkdirSync(modsDir, { recursive: true });
+
+  // IMPORTANT: remove stale jars that are no longer in the manifest.
+  // Without this, an old mod version keeps loading next to the new one and
+  // crashes the game (e.g. rctmod 0.16.6 + rctmod 0.18.1 both present).
+  const wanted = new Set(mods.map((m) => m.filename));
+  for (const f of fs.readdirSync(modsDir)) {
+    if (f.toLowerCase().endsWith(".jar") && !wanted.has(f)) {
+      onProgress?.(`구버전 모드 제거: ${f}`, 84);
+      try { fs.unlinkSync(path.join(modsDir, f)); } catch {}
+    }
+  }
+
   for (let i = 0; i < mods.length; i++) {
     const m = mods[i];
     const dest = path.join(modsDir, m.filename);
@@ -131,6 +143,7 @@ async function ensureMods({ mods, gameDir, onProgress }) {
     }
   }
 }
+
 
 async function ensureModpack({ modpack, gameDir, onProgress }) {
   onProgress?.("마인크래프트 준비", 5);

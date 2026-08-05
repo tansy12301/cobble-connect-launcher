@@ -3,7 +3,7 @@
 //   npm install
 //   npm run build
 //   npx electron .
-const { app, BrowserWindow, ipcMain, safeStorage } = require("electron");
+const { app, BrowserWindow, ipcMain, safeStorage, shell } = require("electron");
 const path = require("path");
 const fs = require("fs");
 const auth = require("./auth.cjs");
@@ -114,6 +114,16 @@ ipcMain.handle("launcher:play", async (_e, opts) => {
     gameDir: gameDir(),
     tokens,
     ramGb: opts.ramGb ?? 4,
+    onExit: (info) => {
+      if (mainWindow) mainWindow.webContents.send("launcher:exit", info);
+    },
   });
   sendProgress("실행됨", 100);
 });
+
+ipcMain.handle("launcher:openLogs", async () => {
+  const dir = path.join(gameDir(), "logs");
+  fs.mkdirSync(dir, { recursive: true });
+  shell.openPath(dir);
+});
+
