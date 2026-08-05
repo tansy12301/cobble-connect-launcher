@@ -75,7 +75,9 @@ async function launch({ modpack, gameDir, tokens, ramGb, onExit }) {
 
   const args = [...jvmArgs, mainClass, ...gameArgs];
 
-  const javaCmd = process.platform === "win32" ? "javaw" : "java";
+  // Use `java` (not javaw) so stdout/stderr can be captured; windowsHide keeps
+  // the console window invisible.
+  const javaCmd = "java";
 
   // Keep the process attached so we can detect crashes (Prism-style).
   const logDir = path.join(gameDir, "logs");
@@ -83,7 +85,7 @@ async function launch({ modpack, gameDir, tokens, ramGb, onExit }) {
   const logPath = path.join(logDir, "launcher-latest.log");
   const logStream = fs.createWriteStream(logPath, { flags: "w" });
 
-  const child = spawn(javaCmd, args, { cwd: gameDir, stdio: ["ignore", "pipe", "pipe"] });
+  const child = spawn(javaCmd, args, { cwd: gameDir, stdio: ["ignore", "pipe", "pipe"], windowsHide: true });
 
   const ring = [];
   const capture = (chunk) => {
