@@ -13,6 +13,10 @@ type LauncherAPI = {
   getProfile: () => Promise<{ username: string; uuid: string } | null>;
   play: (opts: { ramGb: number }) => Promise<void>;
   onProgress: (cb: (p: { stage: string; percent: number }) => void) => () => void;
+  onGameExit: (
+    cb: (i: { code: number; crashed: boolean; message: string | null; logPath: string }) => void,
+  ) => () => void;
+  openLogs: () => Promise<void>;
   getConfig: () => Promise<{ ramGb: number }>;
   setConfig: (c: { ramGb: number }) => Promise<void>;
 };
@@ -38,14 +42,27 @@ export function LauncherApp() {
   const [ramGb, setRamGb] = useState(4);
   const [error, setError] = useState<string | null>(null);
   const [isElectron, setIsElectron] = useState(false);
+  const [crashed, setCrashed] = useState(false);
 
   useEffect(() => {
     if (typeof window === "undefined" || !window.launcher) return;
     setIsElectron(true);
     window.launcher.getProfile().then(setProfile);
     window.launcher.getConfig().then((c) => setRamGb(c.ramGb));
-    const off = window.launcher.onProgress(setProgress);
-    return off;
+    const offProgress = window.launcher.onProgress(setProgress);
+    const offExit = window.launcher.onGameExit((info) => {
+      setStage("idle");
+      setError(
+        info.crashed
+          ? info.message || "마인크래프트가 비정상 종료되었습니다."
+          : null,
+      );
+      setCrashed(info.crashed);
+    });
+    return () => {
+      offProgress();
+      offExit();
+    };
   }, []);
 
   async function handleLogin() {
@@ -74,6 +91,7 @@ export function LauncherApp() {
 
   async function handlePlay() {
     setError(null);
+    setCrashed(false);
     setStage("installing");
     try {
       if (isElectron) {
@@ -156,6 +174,8 @@ export function LauncherApp() {
               progress={progress}
               onPlay={handlePlay}
               error={error}
+              crashed={crashed}
+              onOpenLogs={() => window.launcher?.openLogs()}
             />
           )}
         </main>
@@ -230,12 +250,16 @@ function HomeCard({
   progress,
   onPlay,
   error,
+  crashed,
+  onOpenLogs,
 }: {
   profile: Profile;
   stage: Stage;
   progress: { stage: string; percent: number };
   onPlay: () => void;
   error: string | null;
+  crashed?: boolean;
+  onOpenLogs?: () => void;
 }) {
   const busy = stage === "installing" || stage === "launching";
 
@@ -292,7 +316,21 @@ function HomeCard({
           </p>
         )}
 
-        {error && <p className="text-center text-sm text-red-400">{error}</p>}
+        {error && (
+          <div className="rounded-lg border border-red-400/30 bg-red-500/10 p-3">
+            <p className="whitespace-pre-wrap break-words text-sm text-red-300">{error}</p>
+            {crashed && onOpenLogs && (
+              <Button
+                variant="ghost"
+                size="sm"
+                onClick={onOpenLogs}
+                className="mt-2 text-red-200 hover:bg-white/10"
+              >
+                로그 폴더 열기
+              </Button>
+            )}
+          </div>
+        )}
       </div>
     </Card>
   );
