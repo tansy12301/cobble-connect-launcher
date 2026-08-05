@@ -1,8 +1,9 @@
 {
-  "_comment": "개발자 전용 매니페스트. 여기만 수정하고 다시 패키징하면 플레이어는 새 exe로 자동으로 새 모드/버전 실행.",
+  "_comment": "개발자 전용 매니페스트. 여기만 수정하고 다시 패키징하면 플레이어는 새 exe로 자동으로 새 모드/버전 실행. mods[]에 없는 jar는 실행 시 자동 삭제되므로 구버전 모드가 남지 않습니다.",
   "minecraftVersion": "1.21.1",
   "loader": "fabric",
-  "fabricLoaderVersion": "0.16.9",
+  "_loaderNote": "rctmod/rctapi 0.15+ 는 fabricloader >= 0.17.2 를 요구합니다. 낮추지 마세요.",
+  "fabricLoaderVersion": "0.17.2",
   "server": {
     "name": "Cobblemon Server",
     "ip": "play.example.com",
@@ -10,16 +11,44 @@
   },
   "mods": [
     {
-      "_note": "Modrinth에서 Cobblemon 1.21.1 Fabric 최신 파일 페이지 → 우클릭 '링크 복사'로 실제 URL 교체",
+      "_note": "Modrinth Cobblemon 1.7.x / 1.21.1 Fabric 파일 URL로 교체",
       "name": "Cobblemon",
-      "url": "https://cdn.modrinth.com/data/MdwFAVRL/versions/REPLACE_ME/Cobblemon-fabric-1.6.1+1.21.1.jar",
-      "filename": "cobblemon-fabric-1.6.1+1.21.1.jar",
+      "url": "https://cdn.modrinth.com/data/MdwFAVRL/versions/REPLACE_ME/Cobblemon-fabric-1.7.3+1.21.1.jar",
+      "filename": "cobblemon-fabric-1.7.3+1.21.1.jar",
       "sha1": ""
     },
     {
       "name": "Fabric API",
       "url": "https://cdn.modrinth.com/data/P7dR8mSH/versions/REPLACE_ME/fabric-api-0.115.1+1.21.1.jar",
       "filename": "fabric-api-0.115.1+1.21.1.jar",
+      "sha1": ""
+    },
+    {
+      "_note": "rctapi 0.15.2-beta = cobblemon >=1.7 대응 버전",
+      "name": "RCT API",
+      "url": "https://cdn.modrinth.com/data/REPLACE_ME/versions/REPLACE_ME/rctapi-fabric-1.21.1-0.15.2-beta.jar",
+      "filename": "rctapi-fabric-1.21.1-0.15.2-beta.jar",
+      "sha1": ""
+    },
+    {
+      "_note": "rctmod 0.18.1-beta = cobblemon >=1.7.0 / rctapi >=0.15.0 요구",
+      "name": "Radical Cobblemon Trainers",
+      "url": "https://cdn.modrinth.com/data/REPLACE_ME/versions/REPLACE_ME/rctmod-fabric-1.21.1-0.18.1-beta.jar",
+      "filename": "rctmod-fabric-1.21.1-0.18.1-beta.jar",
+      "sha1": ""
+    },
+    {
+      "_note": "rctapi 의존성",
+      "name": "Architectury API",
+      "url": "https://cdn.modrinth.com/data/lhGA9TYQ/versions/REPLACE_ME/architectury-13.0.8-fabric.jar",
+      "filename": "architectury-13.0.8-fabric.jar",
+      "sha1": ""
+    },
+    {
+      "_note": "rctmod 의존성",
+      "name": "Forge Config API Port",
+      "url": "https://cdn.modrinth.com/data/ohNO6lps/versions/REPLACE_ME/ForgeConfigAPIPort-v21.1.3-1.21.1-Fabric.jar",
+      "filename": "ForgeConfigAPIPort-v21.1.3-1.21.1-Fabric.jar",
       "sha1": ""
     }
   ],
