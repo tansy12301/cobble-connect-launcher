@@ -12,6 +12,12 @@
   },
   "mods": [
     {
+      "name": "accessories-fabric-1.1.0-beta.53+1.21.1",
+      "url": "https://cdn.modrinth.com/data/jtmvUHXj/versions/Xlt4eWBe/accessories-fabric-1.1.0-beta.53%2B1.21.1.jar",
+      "filename": "accessories-fabric-1.1.0-beta.53+1.21.1.jar",
+      "sha1": "fa0b11de088893bb14aff945d0e8efdee165457b"
+    },
+    {
       "name": "AdvancedLootInfo-fabric-1.21.1-1.7.1",
       "url": "https://cdn.modrinth.com/data/PEPVViac/versions/eGn7gRMn/AdvancedLootInfo-fabric-1.21.1-1.7.1.jar",
       "filename": "AdvancedLootInfo-fabric-1.21.1-1.7.1.jar",
@@ -28,144 +34,6 @@
       "url": "https://cdn.modrinth.com/data/DyTvM1dv/versions/TsLZwxGv/AmbientEnvironment-fabric-1.21.1-18.0.0.2.jar",
       "filename": "AmbientEnvironment-fabric-1.21.1-18.0.0.2.jar",
       "sha1": "51d00c5342ac128dbab28f7efbf428e1fe2519d5"
-    },
-    {
-      "name": "BHMenu-Fabric-1.21-2.5.3",
-      "url": "https://cdn.modrinth.com/data/yWSAtnfH/versions/SYHbq6N1/BHMenu-Fabric-1.21-2.5.3.jar",
-      "filename": "BHMenu-Fabric-1.21-2.5.3.jar",
-      "sha1": "04a54517ec822d24b4307a29454714717cfc4af1"
-    },
-    {
-      "name": "BetterAdvancements-Fabric-1.21.1-0.4.3.21",
-      "url": "https://cdn.modrinth.com/data/Q2OqKxDG/versions/j80BmLRo/BetterAdvancements-Fabric-1.21.1-0.4.3.21.jar",
-      "filename": "BetterAdvancements-Fabric-1.21.1-0.4.3.21.jar",
-      "sha1": "f6c6193c8711340e52645b65dbb7ffde7fbf6f30"
-    },
-    {
-      "name": "BetterThirdPerson-Fabric-1.21-1.9.0",
-      "url": "https://cdn.modrinth.com/data/G1s2WpNo/versions/QZTn8cTa/BetterThirdPerson-Fabric-1.21-1.9.0.jar",
-      "filename": "BetterThirdPerson-Fabric-1.21-1.9.0.jar",
-      "sha1": "ea0dd2747e5d52d1b64dd29498e59602e79d9b69"
-    },
-    {
-      "name": "Clumps-fabric-1.21.1-19.0.0.1",
-      "url": "https://cdn.modrinth.com/data/Wnxd13zP/versions/3ene3W1l/Clumps-fabric-1.21.1-19.0.0.1.jar",
-      "filename": "Clumps-fabric-1.21.1-19.0.0.1.jar",
-      "sha1": "14628ba309d876cfefc4cef864a66ef12812066c"
-    },
-    {
-      "name": "CobbleDollars-fabric-2.0.0+Beta-5.1+1.21.1",
-      "url": "https://cdn.modrinth.com/data/s7N7AsqL/versions/cqsHXSXe/CobbleDollars-fabric-2.0.0%2BBeta-5.1%2B1.21.1.jar",
-      "filename": "CobbleDollars-fabric-2.0.0+Beta-5.1+1.21.1.jar",
-      "sha1": "48a2a30fb22e088ca9357fc95bdb4247ddc80b17"
-    },
-    {
-      "name": "CobbleFurnies-fabric-1.1",
-      "url": "https://cdn.modrinth.com/data/AXY1OO9m/versions/kjN188h5/CobbleFurnies-fabric-1.1.jar",
-      "filename": "CobbleFurnies-fabric-1.1.jar",
-      "sha1": "90cf04996fbb1df8d0fb4014ec27121ee000ac5a"
-    },
-    {
-      "name": "Cobblemon-fabric-1.7.3+1.21.1",
-      "url": "https://cdn.modrinth.com/data/MdwFAVRL/versions/kF7CvxTo/Cobblemon-fabric-1.7.3%2B1.21.1.jar",
-      "filename": "Cobblemon-fabric-1.7.3+1.21.1.jar",
-      "sha1": "f192cda3fdfec0f20d1dee1887ec1b9e77b1618c"
-    },
-    {
-      "name": "CobblemonIntros-1.0.0",
-      "url": "https://cdn.modrinth.com/data/gG3mz6AL/versions/FQY0xvNo/CobblemonIntros-1.0.0.jar",
-      "filename": "CobblemonIntros-1.0.0.jar",
-      "sha1": "d8c37fd53417bb5d939f82969dd1f4a1974ca0c9"
-    },
-    {
-      "name": "EMIProfessions-fabric-1.21.1-1.0.3",
-      "url": "https://cdn.modrinth.com/data/LGVihYcz/versions/XToYnTFA/EMIProfessions-fabric-1.21.1-1.0.3.jar",
-      "filename": "EMIProfessions-fabric-1.21.1-1.0.3.jar",
-      "sha1": "26ab09c2a5d21a7ffb220d31b77b403eafc05dab"
-    },
-    {
-      "name": "Essential_1-3-10-4_fabric_1-21-1",
-      "url": "https://cdn.modrinth.com/data/k2ZPuTBm/versions/cB8tNYvi/Essential_1-3-10-4_fabric_1-21-1.jar",
-      "filename": "Essential_1-3-10-4_fabric_1-21-1.jar",
-      "sha1": "d5f32e645a90e0b68d1b922fefe781b6689e4504"
-    },
-    {
-      "name": "FarmersDelight-1.21.1-1.2.9",
-      "url": "https://cdn.modrinth.com/data/R2OftAxM/versions/opCbq7uB/FarmersDelight-1.21.1-1.2.9.jar",
-      "filename": "FarmersDelight-1.21.1-1.2.9.jar",
-      "sha1": "9abe078f48781e4b87288dbc59691c8ba1152d8d"
-    },
-    {
-      "name": "FarmersDelight-1.21.1-3.2.2+refabricated",
-      "url": "https://cdn.modrinth.com/data/7vxePowz/versions/vj4n2BSl/FarmersDelight-1.21.1-3.2.2%2Brefabricated.jar",
-      "filename": "FarmersDelight-1.21.1-3.2.2+refabricated.jar",
-      "sha1": "59846405e46af1e46ad9570a6f004c89652374db"
-    },
-    {
-      "name": "ForgeConfigAPIPort-v21.1.6-1.21.1-Fabric",
-      "url": "https://cdn.modrinth.com/data/ohNO6lps/versions/N5qzq0XV/ForgeConfigAPIPort-v21.1.6-1.21.1-Fabric.jar",
-      "filename": "ForgeConfigAPIPort-v21.1.6-1.21.1-Fabric.jar",
-      "sha1": "18bf1f21cd2db6dcd4e42db85eae54e2a49a48ee"
-    },
-    {
-      "name": "Iceberg-1.21.1-fabric-1.3.2",
-      "url": "https://cdn.modrinth.com/data/5faXoLqX/versions/7ITFAyW8/Iceberg-1.21.1-fabric-1.3.2.jar",
-      "filename": "Iceberg-1.21.1-fabric-1.3.2.jar",
-      "sha1": "170e30bf93ccba6d80dd481eedddae16cb549d29"
-    },
-    {
-      "name": "LegendaryMonuments-7.8",
-      "url": "https://cdn.modrinth.com/data/m6RyHSbV/versions/kSVEEVIv/LegendaryMonuments-7.8.jar",
-      "filename": "LegendaryMonuments-7.8.jar",
-      "sha1": "97a76d52e5620dd0c354837dcf189d8894fea6cb"
-    },
-    {
-      "name": "MythsAndLegends-fabric-1.9.0",
-      "url": "https://cdn.modrinth.com/data/CaOWby9K/versions/eg83qtSQ/MythsAndLegends-fabric-1.9.0.jar",
-      "filename": "MythsAndLegends-fabric-1.9.0.jar",
-      "sha1": "9acdd403a8c1a5544d7f779f301c5f3630d0a211"
-    },
-    {
-      "name": "OpenLoader-fabric-1.21.1-21.1.5",
-      "url": "https://cdn.modrinth.com/data/KwWsINvD/versions/dX14HBtM/OpenLoader-fabric-1.21.1-21.1.5.jar",
-      "filename": "OpenLoader-fabric-1.21.1-21.1.5.jar",
-      "sha1": "6b6babff85256683f7cb56abca091e8f22738596"
-    },
-    {
-      "name": "PresenceFootsteps-1.11.1+1.21",
-      "url": "https://cdn.modrinth.com/data/rcTfTZr3/versions/cCWAPoWg/PresenceFootsteps-1.11.1%2B1.21.jar",
-      "filename": "PresenceFootsteps-1.11.1+1.21.jar",
-      "sha1": "cfbeb32cc1dc17ef5c83a9f7a073a26453da8a8c"
-    },
-    {
-      "name": "SimpleTMs-fabric-2.3.3",
-      "url": "https://cdn.modrinth.com/data/yFqR0DNc/versions/uWiIETYV/SimpleTMs-fabric-2.3.3.jar",
-      "filename": "SimpleTMs-fabric-2.3.3.jar",
-      "sha1": "3433763bf6e20639213fd31a45da187968e61ffe"
-    },
-    {
-      "name": "TerraBlender-fabric-1.21.1-4.1.0.8",
-      "url": "https://cdn.modrinth.com/data/kkmrDlKT/versions/XNtIBXyQ/TerraBlender-fabric-1.21.1-4.1.0.8.jar",
-      "filename": "TerraBlender-fabric-1.21.1-4.1.0.8.jar",
-      "sha1": "4a969dae334681103d3a0977b9448be0c7f4fe07"
-    },
-    {
-      "name": "Terralith_1.21.x_v2.5.8",
-      "url": "https://cdn.modrinth.com/data/8oi3bsk5/versions/MuJMtPGQ/Terralith_1.21.x_v2.5.8.jar",
-      "filename": "Terralith_1.21.x_v2.5.8.jar",
-      "sha1": "bee0cfb1a8cd4bf3d96bccea224fb45d74de9085"
-    },
-    {
-      "name": "UniLib-1.2.0+1.21.1-fabric",
-      "url": "https://cdn.modrinth.com/data/nT86WUER/versions/Wd6Xo4XV/UniLib-1.2.0%2B1.21.1-fabric.jar",
-      "filename": "UniLib-1.2.0+1.21.1-fabric.jar",
-      "sha1": "d8dd29533568a76e6b37d88817069b0823bc5c67"
-    },
-    {
-      "name": "accessories-fabric-1.1.0-beta.53+1.21.1",
-      "url": "https://cdn.modrinth.com/data/jtmvUHXj/versions/Xlt4eWBe/accessories-fabric-1.1.0-beta.53%2B1.21.1.jar",
-      "filename": "accessories-fabric-1.1.0-beta.53+1.21.1.jar",
-      "sha1": "fa0b11de088893bb14aff945d0e8efdee165457b"
     },
     {
       "name": "appleskin-fabric-mc1.21-3.0.6",
@@ -196,6 +64,24 @@
       "url": "https://cdn.modrinth.com/data/9C9Wp8Rw/versions/vjtbxo95/berbers-stamina-tweaks-1.1.jar",
       "filename": "berbers-stamina-tweaks-1.1.jar",
       "sha1": "816922492a40f5b5be0a4a98ad293042b9dc6f23"
+    },
+    {
+      "name": "BetterAdvancements-Fabric-1.21.1-0.4.3.21",
+      "url": "https://cdn.modrinth.com/data/Q2OqKxDG/versions/j80BmLRo/BetterAdvancements-Fabric-1.21.1-0.4.3.21.jar",
+      "filename": "BetterAdvancements-Fabric-1.21.1-0.4.3.21.jar",
+      "sha1": "f6c6193c8711340e52645b65dbb7ffde7fbf6f30"
+    },
+    {
+      "name": "BetterThirdPerson-Fabric-1.21-1.9.0",
+      "url": "https://cdn.modrinth.com/data/G1s2WpNo/versions/QZTn8cTa/BetterThirdPerson-Fabric-1.21-1.9.0.jar",
+      "filename": "BetterThirdPerson-Fabric-1.21-1.9.0.jar",
+      "sha1": "ea0dd2747e5d52d1b64dd29498e59602e79d9b69"
+    },
+    {
+      "name": "BHMenu-Fabric-1.21-2.5.3",
+      "url": "https://cdn.modrinth.com/data/yWSAtnfH/versions/SYHbq6N1/BHMenu-Fabric-1.21-2.5.3.jar",
+      "filename": "BHMenu-Fabric-1.21-2.5.3.jar",
+      "sha1": "04a54517ec822d24b4307a29454714717cfc4af1"
     },
     {
       "name": "bookshelf-fabric-1.21.1-21.1.80",
@@ -234,10 +120,34 @@
       "sha1": "5d82342a2df53fd6df712bfdd583a811572918a4"
     },
     {
+      "name": "Clumps-fabric-1.21.1-19.0.0.1",
+      "url": "https://cdn.modrinth.com/data/Wnxd13zP/versions/3ene3W1l/Clumps-fabric-1.21.1-19.0.0.1.jar",
+      "filename": "Clumps-fabric-1.21.1-19.0.0.1.jar",
+      "sha1": "14628ba309d876cfefc4cef864a66ef12812066c"
+    },
+    {
+      "name": "CobbleDollars-fabric-2.0.0+Beta-5.1+1.21.1",
+      "url": "https://cdn.modrinth.com/data/s7N7AsqL/versions/cqsHXSXe/CobbleDollars-fabric-2.0.0%2BBeta-5.1%2B1.21.1.jar",
+      "filename": "CobbleDollars-fabric-2.0.0+Beta-5.1+1.21.1.jar",
+      "sha1": "48a2a30fb22e088ca9357fc95bdb4247ddc80b17"
+    },
+    {
+      "name": "CobbleFurnies-fabric-1.1",
+      "url": "https://cdn.modrinth.com/data/AXY1OO9m/versions/kjN188h5/CobbleFurnies-fabric-1.1.jar",
+      "filename": "CobbleFurnies-fabric-1.1.jar",
+      "sha1": "90cf04996fbb1df8d0fb4014ec27121ee000ac5a"
+    },
+    {
       "name": "cobblemon_smartphone-fabric-1.0.8",
       "url": "https://cdn.modrinth.com/data/n2f1HbK8/versions/3xaMpVic/cobblemon_smartphone-fabric-1.0.8.jar",
       "filename": "cobblemon_smartphone-fabric-1.0.8.jar",
       "sha1": "5c2b42213b201b132557e846fa08a13f50a7ae1f"
+    },
+    {
+      "name": "Cobblemon-fabric-1.7.3+1.21.1",
+      "url": "https://cdn.modrinth.com/data/MdwFAVRL/versions/kF7CvxTo/Cobblemon-fabric-1.7.3%2B1.21.1.jar",
+      "filename": "Cobblemon-fabric-1.7.3+1.21.1.jar",
+      "sha1": "f192cda3fdfec0f20d1dee1887ec1b9e77b1618c"
     },
     {
       "name": "cobblemonboss-5.0.0-fabric",
@@ -252,10 +162,10 @@
       "sha1": "fcb873618ea68d132b8d9b251aec927713de648d"
     },
     {
-      "name": "emi-1.1.22+1.21.1+fabric",
-      "url": "https://cdn.modrinth.com/data/fRiHVvU7/versions/mYQ3bJs5/emi-1.1.22%2B1.21.1%2Bfabric.jar",
-      "filename": "emi-1.1.22+1.21.1+fabric.jar",
-      "sha1": "45550eada92c711d982a6fffb1f718fe12f07aee"
+      "name": "CobblemonIntros-1.0.0",
+      "url": "https://cdn.modrinth.com/data/gG3mz6AL/versions/FQY0xvNo/CobblemonIntros-1.0.0.jar",
+      "filename": "CobblemonIntros-1.0.0.jar",
+      "sha1": "d8c37fd53417bb5d939f82969dd1f4a1974ca0c9"
     },
     {
       "name": "emi_enchanting-0.1.2+1.21",
@@ -268,6 +178,18 @@
       "url": "https://cdn.modrinth.com/data/sG4TqDb8/versions/OwDhxsDZ/emi_ores-1.2%2B1.21.1%2Bfabric.jar",
       "filename": "emi_ores-1.2+1.21.1+fabric.jar",
       "sha1": "6e149b5d5b75e4a2b4846b0c87cbf8117bb4eec7"
+    },
+    {
+      "name": "emi-1.1.22+1.21.1+fabric",
+      "url": "https://cdn.modrinth.com/data/fRiHVvU7/versions/mYQ3bJs5/emi-1.1.22%2B1.21.1%2Bfabric.jar",
+      "filename": "emi-1.1.22+1.21.1+fabric.jar",
+      "sha1": "45550eada92c711d982a6fffb1f718fe12f07aee"
+    },
+    {
+      "name": "EMIProfessions-fabric-1.21.1-1.0.3",
+      "url": "https://cdn.modrinth.com/data/LGVihYcz/versions/XToYnTFA/EMIProfessions-fabric-1.21.1-1.0.3.jar",
+      "filename": "EMIProfessions-fabric-1.21.1-1.0.3.jar",
+      "sha1": "26ab09c2a5d21a7ffb220d31b77b403eafc05dab"
     },
     {
       "name": "entity_model_features_1.21-fabric-3.0.10",
@@ -288,6 +210,12 @@
       "sha1": "dffd306c5aeba040595e2f02badf441db638624b"
     },
     {
+      "name": "Essential_1-3-10-4_fabric_1-21-1",
+      "url": "https://cdn.modrinth.com/data/k2ZPuTBm/versions/cB8tNYvi/Essential_1-3-10-4_fabric_1-21-1.jar",
+      "filename": "Essential_1-3-10-4_fabric_1-21-1.jar",
+      "sha1": "d5f32e645a90e0b68d1b922fefe781b6689e4504"
+    },
+    {
       "name": "fabric-api-0.116.8+1.21.1",
       "url": "https://cdn.modrinth.com/data/P7dR8mSH/versions/3wZtvzew/fabric-api-0.116.8%2B1.21.1.jar",
       "filename": "fabric-api-0.116.8+1.21.1.jar",
@@ -306,6 +234,18 @@
       "sha1": "65903483bbf770824d821c6065309648aae95304"
     },
     {
+      "name": "FarmersDelight-1.21.1-1.2.9",
+      "url": "https://cdn.modrinth.com/data/R2OftAxM/versions/opCbq7uB/FarmersDelight-1.21.1-1.2.9.jar",
+      "filename": "FarmersDelight-1.21.1-1.2.9.jar",
+      "sha1": "9abe078f48781e4b87288dbc59691c8ba1152d8d"
+    },
+    {
+      "name": "FarmersDelight-1.21.1-3.2.2+refabricated",
+      "url": "https://cdn.modrinth.com/data/7vxePowz/versions/vj4n2BSl/FarmersDelight-1.21.1-3.2.2%2Brefabricated.jar",
+      "filename": "FarmersDelight-1.21.1-3.2.2+refabricated.jar",
+      "sha1": "59846405e46af1e46ad9570a6f004c89652374db"
+    },
+    {
       "name": "ferritecore-7.0.3-fabric",
       "url": "https://cdn.modrinth.com/data/uXXizFIs/versions/sOzRw3CG/ferritecore-7.0.3-fabric.jar",
       "filename": "ferritecore-7.0.3-fabric.jar",
@@ -318,10 +258,22 @@
       "sha1": "a3169ed363d2483efd527fdd49455c9e05ac693f"
     },
     {
+      "name": "ForgeConfigAPIPort-v21.1.6-1.21.1-Fabric",
+      "url": "https://cdn.modrinth.com/data/ohNO6lps/versions/N5qzq0XV/ForgeConfigAPIPort-v21.1.6-1.21.1-Fabric.jar",
+      "filename": "ForgeConfigAPIPort-v21.1.6-1.21.1-Fabric.jar",
+      "sha1": "18bf1f21cd2db6dcd4e42db85eae54e2a49a48ee"
+    },
+    {
       "name": "geckolib-fabric-1.21.1-4.8.3",
       "url": "https://cdn.modrinth.com/data/8BmcQJ2H/versions/fvT8GY10/geckolib-fabric-1.21.1-4.8.3.jar",
       "filename": "geckolib-fabric-1.21.1-4.8.3.jar",
       "sha1": "b82cb945e22f32d519c8a10face78149279e12ef"
+    },
+    {
+      "name": "Iceberg-1.21.1-fabric-1.3.2",
+      "url": "https://cdn.modrinth.com/data/5faXoLqX/versions/7ITFAyW8/Iceberg-1.21.1-fabric-1.3.2.jar",
+      "filename": "Iceberg-1.21.1-fabric-1.3.2.jar",
+      "sha1": "170e30bf93ccba6d80dd481eedddae16cb549d29"
     },
     {
       "name": "iris-fabric-1.8.8+mc1.21.1",
@@ -366,6 +318,12 @@
       "sha1": "f9283248a90e766f217b99c5a5342c807fea3ba5"
     },
     {
+      "name": "LegendaryMonuments-7.8",
+      "url": "https://cdn.modrinth.com/data/m6RyHSbV/versions/kSVEEVIv/LegendaryMonuments-7.8.jar",
+      "filename": "LegendaryMonuments-7.8.jar",
+      "sha1": "97a76d52e5620dd0c354837dcf189d8894fea6cb"
+    },
+    {
       "name": "letmedespawn-1.21.x-fabric-1.5.0",
       "url": "https://cdn.modrinth.com/data/vE2FN5qn/versions/Wb7jqi55/letmedespawn-1.21.x-fabric-1.5.0.jar",
       "filename": "letmedespawn-1.21.x-fabric-1.5.0.jar",
@@ -402,6 +360,12 @@
       "sha1": "6213120772192040a0aeb5c7cfe330c068605b1f"
     },
     {
+      "name": "MythsAndLegends-fabric-1.9.0",
+      "url": "https://cdn.modrinth.com/data/CaOWby9K/versions/eg83qtSQ/MythsAndLegends-fabric-1.9.0.jar",
+      "filename": "MythsAndLegends-fabric-1.9.0.jar",
+      "sha1": "9acdd403a8c1a5544d7f779f301c5f3630d0a211"
+    },
+    {
       "name": "naturesdelight-1.12-1.21.1",
       "url": "https://cdn.modrinth.com/data/18s8zHvJ/versions/iSehw8FX/naturesdelight-1.12-1.21.1.jar",
       "filename": "naturesdelight-1.12-1.21.1.jar",
@@ -424,6 +388,12 @@
       "url": "https://cdn.modrinth.com/data/MPCX6s5C/versions/MK7dm8OP/notenoughanimations-fabric-1.11.1-mc1.21.1.jar",
       "filename": "notenoughanimations-fabric-1.11.1-mc1.21.1.jar",
       "sha1": "8cc4cbd822c24cc06042b4f6c394677da2d0b8d0"
+    },
+    {
+      "name": "OpenLoader-fabric-1.21.1-21.1.5",
+      "url": "https://cdn.modrinth.com/data/KwWsINvD/versions/dX14HBtM/OpenLoader-fabric-1.21.1-21.1.5.jar",
+      "filename": "OpenLoader-fabric-1.21.1-21.1.5.jar",
+      "sha1": "6b6babff85256683f7cb56abca091e8f22738596"
     },
     {
       "name": "owo-lib-0.12.15.4+1.21",
@@ -450,10 +420,28 @@
       "sha1": "e7e94360ac6e9442223c045751ccb8906fecc990"
     },
     {
+      "name": "PresenceFootsteps-1.11.1+1.21",
+      "url": "https://cdn.modrinth.com/data/rcTfTZr3/versions/cCWAPoWg/PresenceFootsteps-1.11.1%2B1.21.jar",
+      "filename": "PresenceFootsteps-1.11.1+1.21.jar",
+      "sha1": "cfbeb32cc1dc17ef5c83a9f7a073a26453da8a8c"
+    },
+    {
       "name": "prickle-fabric-1.21.1-21.1.11",
       "url": "https://cdn.modrinth.com/data/aaRl8GiW/versions/Ef7P6Rb7/prickle-fabric-1.21.1-21.1.11.jar",
       "filename": "prickle-fabric-1.21.1-21.1.11.jar",
       "sha1": "6d6032880be3b6469c5615fd2ea160bf5eb93ac2"
+    },
+    {
+      "name": "RCT API",
+      "url": "https://cdn.modrinth.com/data/CBfM2yw7/versions/9OZx0coL/rctapi-fabric-1.21.1-0.15.2-beta.jar",
+      "filename": "rctapi-fabric-1.21.1-0.15.2-beta.jar",
+      "sha1": "a75bb662e507c3932304d80ed514ec57e5dbf69b"
+    },
+    {
+      "name": "Radical Cobblemon Trainers",
+      "url": "https://cdn.modrinth.com/data/lRwTUnD7/versions/gQx1F1dx/rctmod-fabric-1.21.1-0.18.1-beta.jar",
+      "filename": "rctmod-fabric-1.21.1-0.18.1-beta.jar",
+      "sha1": "00bf82e254bddb804529222567e5719310524085"
     },
     {
       "name": "reactivemusic-1.2.2+1.21.1",
@@ -472,6 +460,12 @@
       "url": "https://cdn.modrinth.com/data/G1hIVOrD/versions/Hf91FuVF/resourcefullib-fabric-1.21-3.0.12.jar",
       "filename": "resourcefullib-fabric-1.21-3.0.12.jar",
       "sha1": "cb67e1302b5116953f45556cc61dbcf40d986ecd"
+    },
+    {
+      "name": "SimpleTMs-fabric-2.3.3",
+      "url": "https://cdn.modrinth.com/data/yFqR0DNc/versions/uWiIETYV/SimpleTMs-fabric-2.3.3.jar",
+      "filename": "SimpleTMs-fabric-2.3.3.jar",
+      "sha1": "3433763bf6e20639213fd31a45da187968e61ffe"
     },
     {
       "name": "sodium-extra-fabric-0.6.0+mc1.21.1",
@@ -528,6 +522,18 @@
       "sha1": "26c5eee723332dd309879f176eadcc2871fbc2c5"
     },
     {
+      "name": "TerraBlender-fabric-1.21.1-4.1.0.8",
+      "url": "https://cdn.modrinth.com/data/kkmrDlKT/versions/XNtIBXyQ/TerraBlender-fabric-1.21.1-4.1.0.8.jar",
+      "filename": "TerraBlender-fabric-1.21.1-4.1.0.8.jar",
+      "sha1": "4a969dae334681103d3a0977b9448be0c7f4fe07"
+    },
+    {
+      "name": "Terralith_1.21.x_v2.5.8",
+      "url": "https://cdn.modrinth.com/data/8oi3bsk5/versions/MuJMtPGQ/Terralith_1.21.x_v2.5.8.jar",
+      "filename": "Terralith_1.21.x_v2.5.8.jar",
+      "sha1": "bee0cfb1a8cd4bf3d96bccea224fb45d74de9085"
+    },
+    {
       "name": "timcore-fabric-1.7.3-1.31.0",
       "url": "https://cdn.modrinth.com/data/lVP9aUaY/versions/yPG8odLw/timcore-fabric-1.7.3-1.31.0.jar",
       "filename": "timcore-fabric-1.7.3-1.31.0.jar",
@@ -544,6 +550,12 @@
       "url": "https://cdn.modrinth.com/data/5aaWibi9/versions/JagCscwi/trinkets-3.10.0.jar",
       "filename": "trinkets-3.10.0.jar",
       "sha1": "f54756f938c7c273713b9f97d4a987eec551e892"
+    },
+    {
+      "name": "UniLib-1.2.0+1.21.1-fabric",
+      "url": "https://cdn.modrinth.com/data/nT86WUER/versions/Wd6Xo4XV/UniLib-1.2.0%2B1.21.1-fabric.jar",
+      "filename": "UniLib-1.2.0+1.21.1-fabric.jar",
+      "sha1": "d8dd29533568a76e6b37d88817069b0823bc5c67"
     },
     {
       "name": "visuality-0.7.7+1.21",
