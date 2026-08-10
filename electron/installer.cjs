@@ -144,6 +144,28 @@ async function ensureMods({ mods, gameDir, onProgress }) {
   }
 }
 
+// Downloads a list of { name, url, filename, sha1 } into gameDir/<subdir>,
+// pruning any file that is no longer in the list.
+async function ensurePack({ items, gameDir, subdir, label, gameDirBase, from, to, onProgress }) {
+  if (!items || items.length === 0) return;
+  const dir = path.join(gameDir, subdir);
+  fs.mkdirSync(dir, { recursive: true });
+  const wanted = new Set(items.map((i) => i.filename));
+  for (const f of fs.readdirSync(dir)) {
+    if (/\.(zip|jar)$/i.test(f) && !wanted.has(f)) {
+      try { fs.unlinkSync(path.join(dir, f)); } catch {}
+    }
+  }
+  for (let i = 0; i < items.length; i++) {
+    const it = items[i];
+    onProgress?.(`${label} 다운로드: ${it.name}`, from + Math.floor((i / items.length) * (to - from)));
+    try {
+      await ensureFile(it.url, path.join(dir, it.filename), it.sha1 || undefined);
+    } catch (e) {
+      throw new Error(`${label} 다운로드 실패 (${it.name}): ${e.message}`);
+    }
+  }
+}
 
 async function ensureModpack({ modpack, gameDir, onProgress }) {
   onProgress?.("마인크래프트 준비", 5);
@@ -158,8 +180,11 @@ async function ensureModpack({ modpack, gameDir, onProgress }) {
     });
   }
   await ensureMods({ mods: modpack.mods || [], gameDir, onProgress });
-  onProgress?.("준비 완료", 95);
+  await ensurePack({ items: modpack.shaders, gameDir, subdir: "shaderpacks", label: "셰이더", from: 95, to: 96, onProgress });
+  await ensurePack({ items: modpack.resourcepacks, gameDir, subdir: "resourcepacks", label: "리소스팩", from: 96, to: 97, onProgress });
+  onProgress?.("준비 완료", 97);
   return { vanilla, fabricProfile };
 }
 
 module.exports = { ensureModpack };
+

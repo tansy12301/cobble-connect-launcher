@@ -92,6 +92,31 @@ ipcMain.handle("launcher:login", async () => {
 
 ipcMain.handle("launcher:logout", async () => { clearTokens(); });
 
+// Loads the modpack manifest. Tries the remote manifest first (GitHub raw) so
+// players get new mods/versions WITHOUT reinstalling the launcher; falls back
+// to the bundled copy when offline.
+async function loadModpack() {
+  const localPath = path.join(__dirname, "modpack.json");
+  const local = JSON.parse(fs.readFileSync(localPath, "utf8"));
+  const cachePath = path.join(userData(), "modpack.cache.json");
+
+  if (local.manifestUrl) {
+    try {
+      sendProgress("모드팩 정보 확인 중", 2);
+      const res = await fetch(`${local.manifestUrl}?t=${Date.now()}`, { cache: "no-store" });
+      if (!res.ok) throw new Error(String(res.status));
+      const remote = await res.json();
+      if (!remote.minecraftVersion || !Array.isArray(remote.mods)) throw new Error("형식 오류");
+      fs.mkdirSync(userData(), { recursive: true });
+      fs.writeFileSync(cachePath, JSON.stringify(remote));
+      return remote;
+    } catch (e) {
+      try { return JSON.parse(fs.readFileSync(cachePath, "utf8")); } catch {}
+    }
+  }
+  return local;
+}
+
 ipcMain.handle("launcher:play", async (_e, opts) => {
   let tokens = loadTokens();
   if (!tokens) throw new Error("로그인이 필요합니다.");
@@ -100,13 +125,14 @@ ipcMain.handle("launcher:play", async (_e, opts) => {
   tokens = await auth.ensureFresh(tokens);
   saveTokens(tokens);
 
-  const modpack = JSON.parse(fs.readFileSync(path.join(__dirname, "modpack.json"), "utf8"));
+  const modpack = await loadModpack();
 
   await installer.ensureModpack({
     modpack,
     gameDir: gameDir(),
     onProgress: sendProgress,
   });
+
 
   sendProgress("게임 시작 중", 98);
   await launcher.launch({
