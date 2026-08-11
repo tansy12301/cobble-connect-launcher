@@ -1,5 +1,7 @@
 {
-  "name": "tanstack_start_ts",
+  "name": "cobblemon-launcher",
+  "productName": "CobblemonLauncher",
+  "version": "1.0.0",
   "private": true,
   "sideEffects": false,
   "type": "module",
@@ -13,7 +15,7 @@
     "format": "prettier --write .",
     "build:electron": "vite build --config vite.electron.config.ts",
     "electron": "npm run build:electron && electron .",
-    "package:win": "npm run build:electron && electron-packager . CobblemonLauncher --platform=win32 --arch=x64 --out=release --overwrite --ignore=\"^/src\" --ignore=\"^/public\" --ignore=\"^/release\" --ignore=\"^/dist$\""
+    "package:win": "npm run build:electron && npx --yes @electron/packager . CobblemonLauncher --platform=win32 --arch=x64 --out=release --overwrite --prune=true --ignore=(^/src|^/public|^/release|^/dist)"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.2",
