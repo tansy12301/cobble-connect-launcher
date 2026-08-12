@@ -29,13 +29,14 @@ code .
 
 # 2) 패키지 설치 (VS Code 터미널을 Command Prompt로 열 것. PowerShell은 정책 오류)
 npm install
-npm install --save-dev electron electron-packager
+npm install --save-dev electron @electron/packager
 
 # 3) 창 띄워 테스트 (진짜 로그인/다운로드/플레이 됨)
 npm run electron
 
 # 4) 배포용 exe 만들기
 npm run package:win
+
 ```
 
 **exe 위치**
